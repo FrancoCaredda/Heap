@@ -22,10 +22,7 @@ void Heap::Push(int value)
 int Heap::Pop()
 {
     int result = m_Values[0];
-
     int index = m_Values.size() - 1;
-    int leftChild;
-    int rightChild;
 
     std::swap(m_Values[index], m_Values[0]);
     m_Values.pop_back();
